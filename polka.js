@@ -1,8 +1,8 @@
-// Required imports
+
 const { ApiPromise, WsProvider } = require('@polkadot/api');
 
 async function main () {              
-  // Initialise the provider to connect to the local node
+
   const provider = new WsProvider('wss://rpc.polkadot.io');
 
   // Create the API and wait until ready
@@ -18,7 +18,7 @@ async function main () {
   console.log(`You are connected to chain ${chain} using ${nodeName} v${nodeVersion}`);
   
   // The actual address that we will use
-const ADDR = '12LjfKQQiSo3rjneE7H3JVhXCDxBs5adj1DGX8fxwNGGkr1X';
+  const ADDR = '12LjfKQQiSo3rjneE7H3JVhXCDxBs5adj1DGX8fxwNGGkr1X';
 
 // Retrieve the last timestamp
 const now = await api.query.timestamp.now();
